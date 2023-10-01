@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.Inp
+@{
+    ViewData["Title"] = "Kalkulacyjny Formularz";
+}
+
+<h1>Urodziny Formularz</h1>
+<form>
+    <input type="number" asp-for="x" />Imie
+    <input type="number" asp-for="y" />Rok urodzenia
+    <select name="wybor" asp-for="wybor">
+        <option value="dodawanie">dodawanie</option>
+        <option value="odejmowanie">odejmowanie</option>
+        <option value="dzielenie">dzielenie</option>
+        <option value="mnozenie">mnozenie</option>
+    </select>
+    <input type="submit" />
+</form>
+<p>@ViewBag.wynik</p>
+
+
+
